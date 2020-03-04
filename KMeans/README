@@ -1,0 +1,16 @@
+# Overview
+ - K-means clustering is one of the simplest and popular unsupervised machine learning algorithms.
+# Steps of how KMeans works:
+ - Select random point K (i.e. 2) as cluster center called "Centroids from dataset
+ - All the data points that are the closest (similar) to the centroid will create a cluster.
+ - Now, we have new clusters. A centroid's new value is going to be the mean of all the data points of that cluster for each cluster.
+ - Repeat the step 2 and 3 until cluster's centroids stop moving.
+ 
+# Choose the right number of clusters using Elbow method
+ - We plot a graph of relationship between the number of clusters and within Cluster Sum of Square (WCSS).
+ - It will form an elbow shape. Select the number of cluster K where no significant decrease in WCSS.
+
+WCSS Math formula
+WCSS is defined as the sum of squared distance between each point of the cluster and its centroid.
+
+𝑊𝐶𝑆𝑆=∑𝑖=1𝑚(𝑃𝑖−𝐶𝑖)2
